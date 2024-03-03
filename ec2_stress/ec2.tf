@@ -1,5 +1,5 @@
 resource "aws_instance" "example_instance" {
-  ami           = "ami-053b0d53c279acc90"  # Substitua pelo ID da AMI do Ubuntu
+  ami           = var.ami_amazon_ohio
   instance_type = var.instance_type
   subnet_id     = aws_subnet.subnet_pub_example_01.id
   vpc_security_group_ids = [aws_security_group.permitir_ssh_http.id]
