@@ -22,3 +22,8 @@ variable "ami_amazon_ohio" {
   description = "AMI Amazon Linux from Ohio"
   default = "ami-02ca28e7c7b8f8be1"
 }
+
+variable "email_example" {
+  description = "E-mail destination"
+  default = "iureradin@gmail.com"
+}
